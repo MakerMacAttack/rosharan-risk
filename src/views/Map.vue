@@ -1,4 +1,5 @@
 <script setup>
+  import { computed } from 'vue'
   // import mechanics from '../services/mechanics.js'
   function rollDie() {
     return 1
@@ -8,11 +9,14 @@
     id: 'container',
     class: 'wrapper'
   }
+  const display = computed(() => {
+    number > 0 ? 1 : 0
+  })
 </script>
 
 <template>
   <main>
     <span @click="">Hello, Roshar</span>
-    <span v-bind="objeOfAttrs">Something {{ number }}</span>
+    <span v-bind="objeOfAttrs">Something {{ display }}</span>
   </main>
 </template>
