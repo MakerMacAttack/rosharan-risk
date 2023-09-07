@@ -1,16 +1,21 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+let isActive = false // remember how to dynamically bind class and style
+let classObj = { // also can be done via object
+  active: true,
+  'text-danger': false
+}
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
+    <div class="wrapper" :class="classObj">
       <HelloWorld msg="Can you do better?" />
 
-      <nav>
+      <nav :class="{ active: isActive }">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
