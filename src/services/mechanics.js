@@ -11,3 +11,9 @@ export function diceSet(numberOfDice, sides) { // How many die to roll, how may 
     }
     return result
 }
+
+export class Deck {
+    constructor(territories) {
+        this.territories = territories
+    }
+}
