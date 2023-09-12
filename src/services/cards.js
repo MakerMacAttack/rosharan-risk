@@ -43,7 +43,8 @@ let denominations = [ // Make this one of those unnecessarily complicated object
 ]
 
 let draw = new Deck(alethkar.map((highprincedom) => {
-  return new Card(highprincedom, denominations[0])
+  let sphere = Math.floor(Math.random() * 3)
+  return new Card(highprincedom, denominations[sphere])
 }))
 
 console.log(draw);
