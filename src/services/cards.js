@@ -5,7 +5,7 @@ class Card {
   }
 }
 
-class Deck {
+export class Deck {
   constructor(cards) {
     this.denominations = [
       "chip",
@@ -44,57 +44,23 @@ class Deck {
   }
 }
 
-let alethkar = [
-  "kholin",
-  "sadeas",
-  "sebarial",
-  "vamah",
-  "aladar",
-  "ruthar",
-  "bethab",
-  "hatham",
-  "roion",
-  "thanadal"
-]
-
-// let denominations = [ // Make this one of those unnecessarily complicated objects
-//   "chip",
-//   "mark",
-//   "broam"
+// let alethkar = [
+//   "aladar",
+//   "bethab",
+//   "hatham",
+//   "kholin",
+//   "roion",
+//   "ruthar",
+//   "sadeas",
+//   "sebarial",
+//   "thanadal",
+//   "vamah"
 // ]
 
-// let sphereList = []
+// let draw = new Deck(alethkar)
 
-// let evenSplit = Math.floor(alethkar.length / 3)
+// console.log(draw.cards);
 
-// for (let i = 0; i < evenSplit; i++) {
-//   sphereList.push(0)
-//   sphereList.push(1)
-//   sphereList.push(2)
-// }
+// draw.shuffle()
 
-// let remainder = alethkar.length % 3
-
-// if (remainder > 0) {
-//   sphereList.push(0)
-// }
-
-// if (remainder > 1) {
-//   sphereList.push(1)
-// }
-
-// sphereList.sort((a, b) => 0.5 - Math.random())
-
-// let draw = new Deck(alethkar.map((territory, idx) => {
-//   return new Card(territory, denominations[sphereList[idx]])
-// }))
-
-// console.log(draw);
-
-let draw = new Deck(alethkar)
-
-console.log(draw.cards);
-
-draw.shuffle()
-
-console.log(draw.cards);
+// console.log(draw.cards);
