@@ -1,6 +1,7 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import { RouterView } from 'vue-router'
+import NavBar from './components/Common/NavBar.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // let isActive = false // remember how to dynamically bind class and style
 // let classObj = { // also can be done via object
@@ -10,16 +11,23 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <!-- <header>
-  </header> -->
-  <RouterView />
+  <body>
+    <header><NavBar />
+    </header>
+    <RouterView />
+  </body>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
-  width: 5px;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
