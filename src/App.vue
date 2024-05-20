@@ -2,6 +2,7 @@
 // import { RouterLink, RouterView } from 'vue-router'
 import { RouterView } from 'vue-router'
 import NavBar from './components/Common/NavBar.vue';
+import RiskFooter from './components/Common/RiskFooter.vue';
 // import HelloWorld from './components/HelloWorld.vue'
 // let isActive = false // remember how to dynamically bind class and style
 // let classObj = { // also can be done via object
@@ -15,6 +16,7 @@ import NavBar from './components/Common/NavBar.vue';
     <header><NavBar />
     </header>
     <RouterView />
+    <RiskFooter />
   </body>
 </template>
 
