@@ -17,5 +17,7 @@ footer {
   width: 50%;
   margin-right: 0;
   margin-left: auto;
+  margin-top: auto;
+  background-color: green;
 }
 </style>

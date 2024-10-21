@@ -28,8 +28,15 @@ header {
 }
 
 body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  background-image: url("assets/Cosmere Symbol.png");
+  background-repeat: repeat;
+  background-color: #cccccc;
 }
 
 .logo {
